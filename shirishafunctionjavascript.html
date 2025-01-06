@@ -14,6 +14,8 @@
     <button id="addbtn">add</button>
     <button id="subbtn">sub</button>
     <button id="mulbtn">mul</button>
+    <button id="divbtn">div</button>
+<!-- <button id="perbtn">per</button> -->
     <p id="Result">      </p>
 </body>
 
@@ -22,6 +24,7 @@
     document.getElementById("subbtn").onclick=sub2numbers;
     document.getElementById("mulbtn").onclick=mul2numbers;
     document.getElementById("divbtn").onclick=div2numbers;
+    // document.getElementById("perbtn").onclick=per2numbers;
 function add2numbers()
 {
  let a=document.getElementById("val1").value;
@@ -49,10 +52,15 @@ function div2numbers()
 {
  let a=document.getElementById("val1").value;
     let b=document.getElementById("val2").value;
-    let res=parseInt(a)+parseInt(b);
+    let res=parseInt(a)/parseInt(b);
     document.getElementById("Result").innerHTML=res;
 }
-
-
+// function per2numbers()
+// {
+//  let a=document.getElementById("val1").value;
+//     let b=document.getElementById("val2").value;
+//     let res=parseInt(a)%parseInt(b);
+//     document.getElementById("Result").innerHTML=res;
+// }
 </script>
 </html>
